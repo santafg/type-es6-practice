@@ -139,3 +139,85 @@
 // console.log(newPerson.lastName);
 // console.log(newPerson.fullName);
 // console.log(newPerson.isSenior());
+
+// let ln = "last-name";
+// let person = {
+//   "first-name": "Santanu",
+//   [ln]: "Ghosh",
+// };
+
+// console.log(person["first-name"]);
+// console.log(person["last-name"]);
+
+// **********************Destructuring Array***********************************
+
+// let employe: string[] = ["Santanu", "Ghosh", "Male"];
+// let employe: string[] = ["Santanu", "Ghosh"];
+
+// let [fname, lname, gender, idea] = employe;
+// let [fname, ...details] = employe;
+// gender = "male" default value if no value if passed or assigned
+// let [fname, lname, gender = "male"] = employe;
+
+// console.log(fname);
+// console.log(lname);
+// console.log(gender);
+// console.log(idea);
+
+// console.log(details);
+
+// **********************Destructuring Object***********************************
+
+// let employe = {
+//   fname: "Santanu",
+//   lname: "Ghosh",
+//   gender: "Male",
+// };
+
+// let { fname, lname, gender } = employe;
+// let { fname: f, lname: l, gender: g } = employe;
+
+// console.log(fname);
+// console.log(lname);
+// console.log(gender);
+// console.log(f);
+// console.log(l);
+// console.log(g);
+
+// **********************Destructuring Object***********************************
+
+// let user: string = "Santanu";
+
+// let greet = `Welcome to 'single' "double" ${user} ES2015
+//         This is the Second line
+//               This is the Third line              so on
+// `;
+
+// console.log(greet);
+
+// **********************For Loop***********************************
+
+// let colors: string[] = ["Red", "Blue", "Green"];
+
+// for (let index in colors) {
+//   console.log(colors[index]);
+// }
+// for (let color of colors) {
+//   console.log(color);
+// }
+
+// let letters: string = "ABC";
+
+// for (let letter of letters) {
+//   console.log(letter);
+// }
+
+// **********************Class***********************************
+
+class Person {
+  greet() {}
+}
+
+let p = new Person();
+
+console.log(p.greet === Person.prototype.greet);
