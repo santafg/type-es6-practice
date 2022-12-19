@@ -214,10 +214,58 @@
 
 // **********************Class***********************************
 
+// class Person {
+//   greet() {}
+// }
+
+// let p = new Person();
+
+// console.log(p.greet === Person.prototype.greet);
+
+// class Person {
+//   name: string;
+
+//   constructor(name: string) {
+//     this.name = name;
+//     console.log(this.name);
+//   }
+//   static staticMethod() {
+//     console.log("Static Method" + this.name);
+//   }
+//   greetPerson() {
+//     console.log("Hello" + this.name);
+//   }
+// }
+
+// let p = new Person("Santanu");
+
+// console.log(p.name);
+// Person.staticMethod();
+// p.greetPerson();
+
 class Person {
-  greet() {}
+  constructor() {
+    console.log("Person Constructor");
+  }
+  getId() {
+    return 10;
+  }
 }
 
-let p = new Person();
+// let p = new Person();
 
-console.log(p.greet === Person.prototype.greet);
+class Employee extends Person {
+  constructor(name: string) {
+    super();
+    console.log("Employee Constructor" + name);
+  }
+  // getId() {
+  //   return 20;
+  // }
+  getId() {
+    return super.getId();
+  }
+}
+
+let e = new Employee("Jhon");
+console.log(e.getId());
