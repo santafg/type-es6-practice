@@ -356,10 +356,23 @@
 
 // **********************For Each Loop***********************************
 
-var numbers: number[] = [2, 3, 4, 5];
+// var numbers: number[] = [2, 3, 4, 5];
 
-numbers.forEach(arrayFunction);
+// numbers.forEach(arrayFunction);
 
-function arrayFunction(element: number, index: number, array: number[]) {
-  console.log("arr[" + index + "]= " + element);
-}
+// function arrayFunction(element: number, index: number, array: number[]) {
+//   console.log("arr[" + index + "]= " + element);
+// }
+
+// **********************Symbol***********************************
+
+// let s = Symbol();
+let s = Symbol("First String");
+console.log(typeof s);
+console.log(s.toString());
+
+let s1 = Symbol();
+let s2 = Symbol();
+console.log(s1);
+
+console.log(s1 === s2);

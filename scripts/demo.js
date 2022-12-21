@@ -262,8 +262,17 @@
 // console.log(myMap.size);
 // console.log(myMap.has("fname"));
 // **********************For Each Loop***********************************
-var numbers = [2, 3, 4, 5];
-numbers.forEach(arrayFunction);
-function arrayFunction(element, index, array) {
-    console.log("arr[" + index + "]= " + element);
-}
+// var numbers: number[] = [2, 3, 4, 5];
+// numbers.forEach(arrayFunction);
+// function arrayFunction(element: number, index: number, array: number[]) {
+//   console.log("arr[" + index + "]= " + element);
+// }
+// **********************Symbol***********************************
+// let s = Symbol();
+let s = Symbol("First String");
+console.log(typeof s);
+console.log(s.toString());
+let s1 = Symbol();
+let s2 = Symbol();
+console.log(s1);
+console.log(s1 === s2);
