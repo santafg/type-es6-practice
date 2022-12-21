@@ -218,19 +218,46 @@
 // if (mySet.id) {
 //   console.log("id exist", mySet.id);
 // }
-let mySet = new Set();
+// let mySet = new Set();
+// let ob1 = {};
+// let ob2 = {};
+// mySet.add("Hello");
+// mySet.add(1);
+// mySet.add(ob1);
+// mySet.add(ob2);
+// console.log(mySet.size);
+// let newSet = new Set([1, 2, 3, 4, 4, 4, 5]); // set ignores duplicate values
+// console.log(newSet.size);
+// console.log(newSet.has(1));
+// console.log(newSet.has(6));
+// newSet.delete(1);
+// console.log(newSet.size);
+// let chainSet = new Set().add("Hello").add("World");
+// console.log(chainSet.size);
+// let mySet = new Set();
+// let key = {};
+// mySet.add(key);
+// console.log(mySet.size);
+// key = null;
+// console.log(mySet.size);
+// let mySet = new WeakSet();
+// let key = {};
+// mySet.add(key);
+// console.log(mySet.has(key));
+// key = null;
+// **********************Maps***********************************
+let myMap = new Map();
+myMap.set("fname", "Santanu");
+myMap.set("Age", 30);
+console.log(myMap);
+console.log(myMap.get("fname"));
 let ob1 = {};
 let ob2 = {};
-mySet.add("Hello");
-mySet.add(1);
-mySet.add(ob1);
-mySet.add(ob2);
-console.log(mySet.size);
-let newSet = new Set([1, 2, 3, 4, 4, 4, 5]); // set ignores duplicate values
-console.log(newSet.size);
-console.log(newSet.has(1));
-console.log(newSet.has(6));
-newSet.delete(1);
-console.log(newSet.size);
-let chainSet = new Set().add("Hello").add("World");
-console.log(chainSet.size);
+myMap.set(ob1, 10);
+myMap.set(ob2, 30);
+console.log(myMap);
+console.log(myMap.get(ob1));
+myMap.delete("fname");
+myMap.clear();
+console.log(myMap.size);
+console.log(myMap.has("fname"));
