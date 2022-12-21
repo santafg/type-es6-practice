@@ -330,26 +330,36 @@
 
 // **********************Maps***********************************
 
-let myMap = new Map();
+// let myMap = new Map();
 
-myMap.set("fname", "Santanu");
+// myMap.set("fname", "Santanu");
 
-myMap.set("Age", 30);
+// myMap.set("Age", 30);
 
-console.log(myMap);
+// console.log(myMap);
 
-console.log(myMap.get("fname"));
+// console.log(myMap.get("fname"));
 
-let ob1 = {};
-let ob2 = {};
+// let ob1 = {};
+// let ob2 = {};
 
-myMap.set(ob1, 10);
-myMap.set(ob2, 30);
+// myMap.set(ob1, 10);
+// myMap.set(ob2, 30);
 
-console.log(myMap);
-console.log(myMap.get(ob1));
+// console.log(myMap);
+// console.log(myMap.get(ob1));
 
-myMap.delete("fname");
-myMap.clear();
-console.log(myMap.size);
-console.log(myMap.has("fname"));
+// myMap.delete("fname");
+// myMap.clear();
+// console.log(myMap.size);
+// console.log(myMap.has("fname"));
+
+// **********************For Each Loop***********************************
+
+var numbers: number[] = [2, 3, 4, 5];
+
+numbers.forEach(arrayFunction);
+
+function arrayFunction(element: number, index: number, array: number[]) {
+  console.log("arr[" + index + "]= " + element);
+}

@@ -246,18 +246,24 @@
 // console.log(mySet.has(key));
 // key = null;
 // **********************Maps***********************************
-let myMap = new Map();
-myMap.set("fname", "Santanu");
-myMap.set("Age", 30);
-console.log(myMap);
-console.log(myMap.get("fname"));
-let ob1 = {};
-let ob2 = {};
-myMap.set(ob1, 10);
-myMap.set(ob2, 30);
-console.log(myMap);
-console.log(myMap.get(ob1));
-myMap.delete("fname");
-myMap.clear();
-console.log(myMap.size);
-console.log(myMap.has("fname"));
+// let myMap = new Map();
+// myMap.set("fname", "Santanu");
+// myMap.set("Age", 30);
+// console.log(myMap);
+// console.log(myMap.get("fname"));
+// let ob1 = {};
+// let ob2 = {};
+// myMap.set(ob1, 10);
+// myMap.set(ob2, 30);
+// console.log(myMap);
+// console.log(myMap.get(ob1));
+// myMap.delete("fname");
+// myMap.clear();
+// console.log(myMap.size);
+// console.log(myMap.has("fname"));
+// **********************For Each Loop***********************************
+var numbers = [2, 3, 4, 5];
+numbers.forEach(arrayFunction);
+function arrayFunction(element, index, array) {
+    console.log("arr[" + index + "]= " + element);
+}
