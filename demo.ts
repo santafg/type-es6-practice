@@ -367,12 +367,77 @@
 // **********************Symbol***********************************
 
 // let s = Symbol();
-let s = Symbol("First String");
-console.log(typeof s);
-console.log(s.toString());
+// let s = Symbol("First String");
+// console.log(typeof s);
+// console.log(s.toString());
 
-let s1 = Symbol();
-let s2 = Symbol();
-console.log(s1);
+// let s1 = Symbol();
+// let s2 = Symbol();
+// console.log(s1);
 
-console.log(s1 === s2);
+// console.log(s1 === s2);
+
+// ********************************Typescript***********************************
+
+// var a: number = 10;
+
+// var b: string;
+
+// Enumeration
+
+// enum EyeColor {
+//   Brown = 1,
+//   Black = 5,
+//   Blue = 10,
+// }
+
+// var myEyeColor = EyeColor.Brown;
+
+// console.log(myEyeColor);
+
+// console.log(EyeColor[myEyeColor]);
+
+// Array
+
+// let strArr1: string[] = ["one", "two", "three"];
+// let strArr2: Array<string> = ["one", "two"];
+
+// let anyArr: any[] = ["one", 10, true];
+
+// Tuple
+
+// let myTuple: [string, number] = ["hi", 10];
+// console.log(myTuple[0], myTuple[1]);
+
+// Class
+
+// class Person {
+//   public fname: string;
+//   public lanme: string;
+//   constractor(fname: string, lname: string) {
+//     fname = this.fname;
+//     lname = this.lanme;
+//   }
+// }
+
+// class Person1 {
+//   constructor(public fname: string, public lname: string) {}
+// }
+
+// Interface
+
+interface Person {
+  fname: string;
+  lname: string;
+  age?: number;
+}
+
+let person1: Person = {
+  fname: "Santanu",
+  lname: "Ghosh",
+  age: 10,
+};
+let person2: Person = {
+  fname: "Santanu",
+  lname: "Ghosh",
+};
